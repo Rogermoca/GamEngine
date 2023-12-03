@@ -15,6 +15,11 @@ public:
 	std::string getName();
 	float getX();
 	float getY();
+	float getHitboxX();
+	float getHitboxY();
+	float getHitboxWidth();
+	float getHitboxHeight();
+	void setHitbox(float newX, float newY, float newWidth, float newHeight);
 
 private:
 	std::string name;

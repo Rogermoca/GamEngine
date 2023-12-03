@@ -88,7 +88,6 @@
     <ClInclude Include="Code\Engine\Audio.h" />
     <ClInclude Include="Code\Engine\Types.h" />
     <ClInclude Include="Code\Engine\Window.h" />
-    <ClInclude Include="Code\Game\Main.h" />
     <ClInclude Include="include\glad\glad.h" />
     <ClInclude Include="include\glm\common.hpp" />
     <ClInclude Include="include\glm\detail\compute_common.hpp" />

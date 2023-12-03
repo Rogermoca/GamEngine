@@ -5,7 +5,28 @@ bool checkCollision(const Hitbox& a, const Hitbox& b) {
     return a.x < b.x + b.width && a.x + a.width > b.x && a.y < b.y + b.height && a.y + a.height > b.y;
 }
 
+void gameObject2D::move(float newX, float newY){
+    x = newX;
+    y = newY;
 
+    box.x = x;
+    box.y = y;
+}
+float gameObject2D::getX() { return x; }
+float gameObject2D::getY() { return y; }
+float gameObject2D::getHitboxX() { return box.x; }
+float gameObject2D::getHitboxY() { return box.y; }
+float gameObject2D::getHitboxWidth() { return box.width; }
+float gameObject2D::getHitboxHeight() { return box.height; }
+std::string gameObject2D::getName(){
+    return name;
+}
+void gameObject2D::setHitbox(float newX, float newY, float newWidth, float newHeight) {
+    box.x = newX;
+    box.y = newY;
+    box.width = newWidth;
+    box.height = newHeight;
+}
 
 /*
 ejemplo de como funciona el game object vercion solo .cpp
