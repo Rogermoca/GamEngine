@@ -4,9 +4,9 @@
 #include "iostream"
 //Roger
 
-void window::activateWindow() {
-    SDL_Init(SDL_INIT_VIDEO);
-    if (SDL_Init(SDL_INIT_VIDEO) != NULL) {
+void window::activate() {
+    SDL_Init(SDL_INIT_EVERYTHING);
+    if (SDL_Init(SDL_INIT_EVERYTHING) != NULL) {
         std::cout << "Error SDL";
         SDL_Quit();
     }
@@ -19,4 +19,9 @@ void window::createWindow(){
         SDL_DestroyWindow(window);
         SDL_Quit();
     }
+}
+
+void window::destroy(){
+    SDL_DestroyWindow(window);
+    SDL_Quit();
 }

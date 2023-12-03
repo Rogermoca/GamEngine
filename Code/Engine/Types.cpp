@@ -23,6 +23,8 @@ void gameObject2D::move(float newX, float newY){
 }
 float gameObject2D::getX() { return x; }
 float gameObject2D::getY() { return y; }
+float gameObject2D::getSizeX() { return sizeX; }
+float gameObject2D::getSizeY() { return sizeY; }
 float gameObject2D::getHitboxX() { return box.x; }
 float gameObject2D::getHitboxY() { return box.y; }
 float gameObject2D::getHitboxWidth() { return box.width; }
@@ -35,6 +37,16 @@ void gameObject2D::setHitbox(float newX, float newY, float newWidth, float newHe
     box.y = newY;
     box.width = newWidth;
     box.height = newHeight;
+}
+void gameObject2D::setSize(float newX, float newY) {
+    sizeX = newX;
+    sizeY = newY;
+}
+
+SDL_Texture* gameObject2D::getTexture(){ return Texture; }
+
+void gameObject2D::setTexture(SDL_Texture* newTexture){
+    Texture = newTexture;
 }
 
 /*

@@ -3,7 +3,8 @@
 
 class window {
 public:
-	void activateWindow();
+	void activate();
 	void createWindow();
+	void destroy();
 	SDL_Window* window;
 };
