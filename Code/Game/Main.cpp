@@ -2,14 +2,13 @@
 #include "Window.h"
 
 #include <iostream>
-#include "Main.h"
 //Ejecutar
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]){
 
-    void window::activateWindow();
+    void activateWindow();
 
-    void window::createWindow();
+    void createWindow();
 
     SDL_Event event;
     bool quit = false;

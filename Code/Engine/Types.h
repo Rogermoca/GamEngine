@@ -8,6 +8,8 @@ struct Hitbox {
 
 bool checkCollision(const Hitbox& a, const Hitbox& b);
 
+void paintHitbox();
+
 class gameObject2D{
 public:
 	gameObject2D(std::string name, Hitbox box, float x, float y) : name(name), box(box), x(x), y(y) {}
