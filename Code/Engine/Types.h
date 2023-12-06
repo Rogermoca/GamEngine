@@ -7,9 +7,13 @@ struct Hitbox {
 	float x, y, width, height;
 };
 
+
+
 bool checkCollision(const Hitbox& a, const Hitbox& b);
 
 void paintHitbox(Hitbox hitboxA);
+
+
 
 class gameObject2D{
 public:

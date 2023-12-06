@@ -25,3 +25,5 @@ void window::destroy(){
     SDL_DestroyWindow(window);
     SDL_Quit();
 }
+void window::createobject(gameObject2D go) {
+}

@@ -593,6 +593,9 @@
     <Library Include="libs\SDL2main.lib" />
     <Library Include="libs\SDL2test.lib" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\ship.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
