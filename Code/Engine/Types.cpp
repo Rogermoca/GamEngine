@@ -6,13 +6,7 @@
 bool checkCollision(const Hitbox& a, const Hitbox& b) {
     return a.x < b.x + b.width && a.x + a.width > b.x && a.y < b.y + b.height && a.y + a.height > b.y;
 }
-void paintHitbox(Hitbox hitboxA) {
-    SDL_Rect rect = { hitboxA.x, hitboxA.y, hitboxA.width, hitboxA.height };
-    SDL_Renderer* renderer;
-    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255); // Color rojo
-    SDL_RenderDrawRect(renderer, &rect);
-    SDL_DestroyRenderer(renderer);
-}
+
 
 void gameObject2D::move(float newX, float newY){
     x = newX;
